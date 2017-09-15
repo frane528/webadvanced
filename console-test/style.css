@@ -6,7 +6,24 @@
 			color: white;
 			font-family: sans-serif;
 		}
-
+		input {
+			color: white;
+		}
+		p {
+			color: white;
+			font-family: sans-serif;
+		}
+		input {
+			font-family: sans-serif;
+			width: 30px;
+			margin: 5px;
+			background-color: black;
+			color: white;
+		}
+		button {
+			background-color: black;
+			color: white;
+		}
 		#redSquare {
 			background-color: red;
 			width: 50px;
