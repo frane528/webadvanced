@@ -2,7 +2,7 @@ function shapes(){
       var redSquare = document.getElementById("redSquare");
       var yellowCircle = document.getElementById("yellowCircle");
       var blueSquare = document.getElementById("blueSquare");
-      var newLine = '\n';
+      var breakLine = '\n';
       
       var result = '';
       
@@ -12,13 +12,13 @@ function shapes(){
       for(var j=0;j<height;j++){
         for(var i=0;i<width;i++){
           result += redSquare;
-        }; result += newLine;
+        }; result += breakLine;
         for(var i=0;i<width;i++){
           result += yellowCircle;
-        }; result += newLine;
+        }; result += breakLine;
         for(var i=0;i<width;i++){
           result += blueSquare;
-        }; result += newLine;
+        }; result += breakLine;
       };
       console.log(result);
     };
