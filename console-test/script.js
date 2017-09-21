@@ -24,5 +24,5 @@ for (var i = 0; i < 300; i++) { //standard for loop to iterate for 100 console l
         }
         console.log(shape); //output of snow string
     }, shapeTimer); // snowTimer determines when the sleet string is released
-    shapeTimer += 100; // in order to "animate", each sleet string is released +100 milliseconds after the previous one.
+    shapeTimer += 3000; // in order to "animate", each sleet string is released +100 milliseconds after the previous one.
 } 
