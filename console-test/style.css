@@ -1,4 +1,11 @@
-		body {
+		*,
+		*:before,
+		*:after {
+			  box-sizing: border-box;
+			}
+		body, html {
+			width: 100%;
+			height: 100%;
 			background-color: black;
 			padding: 5%;
 		}
@@ -7,24 +14,30 @@
 			font-family: sans-serif;
 		}
 		#redSquare {
+			display: inline-block;
 			background-color: red;
 			width: 50px;
 			height: 50px;
-			margin: 15px;
 			float: left;
+  			margin: 1.858736059%;
 		}
-		#yellowCircle {
-			background-color: yellow;
-			width: 50px;
-			height: 50px;
-			border-radius: 100%;
-			margin: 15px;
+		#yellowTriangle {
+			display: inline-block;
+  			width: 60px;
+			height: 30px;
+			border-bottom: solid 50px rgb(255,255,0);
+			border-left: solid 30px transparent;
+			border-right: solid 30px transparent;
 			float: left;
-		}
-		#blueSquare {
+  			margin: 1.858736059%;
+  			}
+		#blueCircle {
+			display: inline-block;
 			background-color: blue;
 			width: 50px;
 			height: 50px;
-			margin: 15px;
+			border-radius: 100%;
 			float: left;
+  			margin: 1.858736059%;
+  			top: 200px;
 		}
