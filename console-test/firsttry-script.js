@@ -1,20 +1,11 @@
-
 var shapeTimer = 0;
 let shapeArray = ['        🔵', '        🔶', '      🔶🔺🔵🔶','   🔵🔶🔺🔵🔶🔺🔵',' 🔺🔵🔶🔺🔵🔶🔺🔵🔶🔺','🔶🔺🔵🔶🔺🔵🔶🔺🔵🔶🔺🔵🔶', ' 🔺🔵🔶🔺🔵🔶🔺🔵🔶🔺', '   🔵🔶🔺🔵🔶🔺🔵','      🔶🔺🔵🔶','        🔺'];
 
-var counter = 0; 
-
-  for (i = 0; i <( shapeArray.length * 50); i++) {
+  for (i = 0; i <50; i++) {
     setTimeout(function() {
-
-      console.log(shapeArray[counter]);
-   
-      if( counter < shapeArray.length -1 ){ 
-        counter++;
-      } else{
-        counter = 0;
-      }
-    
+    for (let j = 0; j < shapeArray.length; j++) {
+      console.log(shapeArray[j]);
+    }
     }, shapeTimer); 
     shapeTimer += 300;
 };
