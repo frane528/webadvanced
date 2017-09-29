@@ -18,13 +18,12 @@
 		}
 		
 		  	button {
-		  	border-style: none;
+		  	display: inline-block;
 			float: left;
 			margin: 1%;
 			vertical-align: middle;
   			-webkit-transform: perspective(1px) translateZ(0);
   			transform: perspective(1px) translateZ(0);
-			box-shadow: 0 0 1px transparent;
 			-webkit-transition-duration: 0.3s;
 			transition-duration: 0.3s;
 			-webkit-transition-property: transform;
@@ -36,20 +35,23 @@
 	  		transform: scale(1.1);
 		}
 		#redSquare {
+			border-style: none;
 			background-color: red;
 			width: 50px;
 			height: 50px;
 		}
 
 		#yellowTriangle {
-			border-bottom: solid 50px rgb(255,255,0);
-			border-left: solid 30px transparent;
-			border-right: solid 30px transparent;
-			width: 60px;
-			height: 30px;
+			width: 50px;
+			height: 50px;
+			border-style: inset;
+			border-width: 0 25px 43.5px 25px;
+			border-color: black black #ffff00 black;
   			}
   			
+  			
 		#blueCircle {
+			border-style: none;
 			background-color: blue;
 			width: 50px;
 			height: 50px;

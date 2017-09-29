@@ -1,20 +1,38 @@
+function triangleAnimation(){
+  var result = '';
+  var t = 0;
+  
+  for(var i=0;i<1;i++){
+    setTimeout(function(){
+      result += '🔺';
+      console.log(result);
+    },t)
+    t+=100;
+  }
+}
 
-var shapeTimer = 0;
-let shapeArray = ['        🔵', '        🔶', '      🔶🔺🔵🔶','   🔵🔶🔺🔵🔶🔺🔵',' 🔺🔵🔶🔺🔵🔶🔺🔵🔶🔺','🔶🔺🔵🔶🔺🔵🔶🔺🔵🔶🔺🔵🔶', ' 🔺🔵🔶🔺🔵🔶🔺🔵🔶🔺', '   🔵🔶🔺🔵🔶🔺🔵','      🔶🔺🔵🔶','        🔺'];
+function squareAnimation(){
+  var result = '';
+  var t = 0;
+  
+  for(var i=0;i<1;i++){
+    setTimeout(function(){
+      result += '⬛';
+      console.log(result);
+    },t)
+    t+=100;
+  }
+}
 
-var counter = 0; 
-
-  for (i = 0; i <( shapeArray.length * 50); i++) {
-    setTimeout(function() {
-
-      console.log(shapeArray[counter]);
-   
-      if( counter < shapeArray.length -1 ){ 
-        counter++;
-      } else{
-        counter = 0;
-      }
-    
-    }, shapeTimer); 
-    shapeTimer += 300;
-};
+function circleAnimation(){
+  var result = '';
+  var t = 0;
+  
+  for(var i=0;i<1;i++){
+    setTimeout(function(){
+      result += '🔴';
+      console.log(result);
+    },t)
+    t+=100;
+  }
+}
