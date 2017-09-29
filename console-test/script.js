@@ -3,7 +3,7 @@ var triangleTimer = 0;
 let triangleArray = ['    ⚠️', '  ⚠️⚠️⚠️', ' ⚠️⚠️⚠️⚠️⚠️', '⚠️⚠️⚠️⚠️⚠️⚠️⚠️'];
 var counter = 0; 
 
-  for (i = 0; i <( triangleArray.length * 1); i++) {
+  for (t = 0; t <( triangleArray.length * 1); t++) {
     setTimeout(function() {
 
       console.log(triangleArray[counter]);
@@ -25,7 +25,7 @@ var squareTimer = 0;
 let squareArray = ['🆘🆘🆘🆘', '🆘🆘🆘🆘', '🆘🆘🆘🆘'];
 var counter = 0; 
 
-  for (i = 0; i <( squareArray.length * 1); i++) {
+  for (s = 0; s <( squareArray.length * 1); s++) {
     setTimeout(function() {
 
       console.log(squareArray[counter]);
