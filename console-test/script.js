@@ -22,7 +22,7 @@ var counter = 0;
 
 function squareAnimation(){
 var squareTimer = 0;
-let squareArray = ['🆘🆘🆘🆘', '🆘🆘🆘🆘', '🆘🆘🆘🆘'];
+let squareArray = ['🔻🔺🔻🔺', '🔺🔻🔺🔻', '🔻🔺🔻🔺'];
 var counter = 0; 
 
   for (s = 0; s <( squareArray.length * 1); s++) {
