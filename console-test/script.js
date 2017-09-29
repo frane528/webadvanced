@@ -1,5 +1,5 @@
 function triangleAnimation(){
-var shapeTimer = 0;
+var triangleTimer = 0;
 let triangleArray = ['    ⚠️', '  ⚠️⚠️⚠️', ' ⚠️⚠️⚠️⚠️⚠️', '⚠️⚠️⚠️⚠️⚠️⚠️⚠️'];
 var counter = 0; 
 
@@ -14,23 +14,32 @@ var counter = 0;
         counter = 0;
       }
     
-    }, shapeTimer); 
-    shapeTimer += 300;
+    }, triangleTimer); 
+    triangleTimer += 300;
 };
   
 }
 
 function squareAnimation(){
-  var result = '';
-  var t = 0;
+var squareTimer = 0;
+let squareArray = ['🆘🆘🆘🆘', '🆘🆘🆘🆘', '🆘🆘🆘🆘'];
+var counter = 0; 
+
+  for (i = 0; i <( squareArray.length * 1); i++) {
+    setTimeout(function() {
+
+      console.log(squareArray[counter]);
+   
+      if( counter < squareArray.length -1 ){ 
+        counter++;
+      } else{
+        counter = 0;
+      }
+    
+    }, squareTimer); 
+    squareTimer += 300;
+};
   
-  for(var i=0;i<1;i++){
-    setTimeout(function(){
-      result += '⬛';
-      console.log(result);
-    },t)
-    t+=100;
-  }
 }
 
 function circleAnimation(){
