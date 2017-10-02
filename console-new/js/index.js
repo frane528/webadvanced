@@ -11,10 +11,12 @@ $(window).resize(function(){
 });
 
 $(window).resize(function(){
-    if($(window).width() < 1499 ) {
+    if($(window).width() < 1000 ) {
         $('#almost').show();}
   else if ($(window).width() > 700 ) {
-      $('#almost').hide();}
+      $('#almost').show();}
+    else {$("#almost").hide();
+    }
 });
 
 $(window).resize(function(){
