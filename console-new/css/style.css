@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  padding: 3%;
+  color: white;
+  font-family: 'Nobile', sans-serif;
+}
+
+/* wide screen */
+
+ #container {
+  text-align: center;
+  position: relative;
+  width: 1000px;
+  left: 50%;
+  margin-left: -500px;
+}
+  
+
+h1 {
+  font-size: 44pt;
+  float: left;
+  margin: 1em 1em 1.5em 1em;
+}
+h1:hover {
+  color: #D3D3D3;
+}
+
+h2 {
+  display: none;
+  position: absolute;
+}
+
+  #target {
+  top: 200px;
+  font-size: 18pt;
+  line-height: 36pt;
+  text-align: center;
+  position: relative;
+}
+  
+ .shape {
+  border-radius:0;
+  border-left: 0 solid transparent;
+  border-right: 0 solid transparent;
+  animation: shape 5s infinite ease-in-out;
+  width: 3em;
+  border-bottom: 3em solid red;
+  margin: 1em;
+  float: left;
+  position: relative;
+  top: 60px;
+}
+
+.shape:nth-child(2) {
+  float: none;
+}
+ 
+@keyframes shape {
+  33% {
+    width: 0;
+    border-color: yellow transparent;
+    border-width: 0 1.5em 3em;
+    border-radius:0;
+    transform: rotate(-180deg);
+  }
+  
+  66% {
+    width: 3em;
+    border-color: blue transparent;
+    border-width: 0 0 3em;
+    border-radius:1.5em;
+    transform: rotate(90deg) translate(0px, 0px) ;
+  }
+}
+
+/*medium screen*/
+
+#container-2 {
+  position: relative;
+  left: 50%;
+  width: 600px;
+  margin-left: -300px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 700px) {
+#redSquare {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  margin: 2em;
+}
+
+#yellowTriangle {
+  margin: 2em;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 200px solid yellow;
+}
+
+#blueCircle {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin: 2em;
+}
+  #perfect {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1199px) {
+
+
+}
+@media screen and (min-width: 1200px) {
+ 
+}
+
+
+
+ 
+
