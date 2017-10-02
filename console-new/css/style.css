@@ -127,7 +127,7 @@ h2 {
     line-height: 2em;
     margin: 2em;
   }
-  #almost #toggle #target .shape {
+  #almost {
     visibility: hidden;
   }
 }
