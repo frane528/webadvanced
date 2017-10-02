@@ -127,18 +127,11 @@ h2 {
     line-height: 2em;
     margin: 2em;
   }
-  #almost {
-    display: none;
+  #almost #toggle #target .shape {
+    visibility: hidden;
   }
 }
 
-@media screen and (min-width: 701px) and (max-width: 1199px) {
-
-
-}
-@media screen and (min-width: 1200px) {
- 
-}
 
 
 
