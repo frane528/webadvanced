@@ -24,6 +24,7 @@ $(window).resize(function(){
 function triangleAnimation(){
 var triangleTimer = 0;
 let triangleArray = ['    ⚠️', '  ⚠️⚠️⚠️', ' ⚠️⚠️⚠️⚠️⚠️', '⚠️⚠️⚠️⚠️⚠️⚠️⚠️'];
+let triangleArray2 = ['        ⚠️', '       ⚠️⚠️⚠️', '     ⚠️⚠️⚠️⚠️⚠️', '    ⚠️⚠️⚠️⚠️⚠️⚠️⚠️', '  ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️', '⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️'];
 var counter = 0; 
 
   for (t = 0; t <( triangleArray.length * 1); t++) {
@@ -43,39 +44,25 @@ var counter = 0;
   
 }
 
+var redCounter = 0.1;
+
 function squareAnimation(){
 var squareTimer = 0;
 let squareArray = ['🔻🔺🔻🔺🔻🔺🔻', '🔺🔻🔺🔻🔺🔻🔺', '🔻🔺🔻🔺🔻🔺🔻', '🔺🔻🔺🔻🔺🔻🔺'];
+let squareArray2 = ['🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺', '🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻', '🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺', '🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻', '🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺', '🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻', '🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺', '🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻🔺🔻'];
 var counter = 0; 
 
-  for (s = 0; s <( squareArray.length * 1); s++) {
+let allArrays = [squareArray, squareArray2];
+
+var randomArray = Math.floor(Math.random()*3);
+console.log(randomArray)
+
+  for (i = 0; i <( allArrays[randomArray].length * 1); i++) {
     setTimeout(function() {
 
-      console.log(squareArray[counter]);
+      console.log(allArrays[randomArray][counter]);
    
-      if( counter < squareArray.length -1 ){ 
-        counter++;
-      } else{
-        counter = 0;
-      }
-    
-    }, squareTimer); 
-    squareTimer += 300;
-};
-  
-}
-
-function circleAnimation(){
-var shapeTimer = 0;
-let shapeArray = ['     🔵🔵🔵', '  🔵        🔵', '🔵            🔵','  🔵        🔵', '     🔵🔵🔵'];
-var counter = 0; 
-
-  for (i = 0; i <( shapeArray.length * 1); i++) {
-    setTimeout(function() {
-
-      console.log(shapeArray[counter]);
-   
-      if( counter < shapeArray.length -1 ){ 
+      if( counter < allArrays[randomArray].length -1 ){ 
         counter++;
       } else{
         counter = 0;
@@ -84,5 +71,48 @@ var counter = 0;
     }, shapeTimer); 
     shapeTimer += 300;
 };
+
+  $("#redSquare").css({ "-webkit-transform" : "scale(" + (1 + redCounter) + ")",
+                         "transform" : "scale(" + (1 + redCounter) + ")" 
+                        })
+  
+  redCounter = redCounter + 0.1;
+
+}
+
+var blueCounter = 0.1;
+
+function circleAnimation(){
+var shapeTimer = 0;
+let shapeArray = ['     🔵🔵🔵', '  🔵        🔵', '🔵            🔵','  🔵        🔵', '     🔵🔵🔵'];
+let shapeArray2 = ['    🔵🔵🔵', '  🔵🔵🔵🔵🔵🔵', '🔵🔵🔵🔵🔵🔵🔵🔵','🔵🔵🔵🔵🔵🔵🔵🔵', '  🔵🔵🔵🔵🔵🔵', '    🔵🔵🔵'];
+let shapeArray3 = ['     🔵🔵🔵🔵', '   🔵🔵🔵🔵🔵🔵🔵', ' 🔵🔵🔵🔵🔵🔵🔵🔵🔵', '🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵', '🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵', '  🔵🔵🔵🔵🔵🔵🔵🔵🔵', '    🔵🔵🔵🔵🔵🔵🔵', '      🔵🔵🔵🔵'];
+var counter = 0; 
+
+let allArrays = [shapeArray, shapeArray2, shapeArray3];
+
+var randomArray = Math.floor(Math.random()*3);
+console.log(randomArray)
+
+  for (i = 0; i <( allArrays[randomArray].length * 1); i++) {
+    setTimeout(function() {
+
+      console.log(allArrays[randomArray][counter]);
+   
+      if( counter < allArrays[randomArray].length -1 ){ 
+        counter++;
+      } else{
+        counter = 0;
+      }
+    
+    }, shapeTimer); 
+    shapeTimer += 300;
+};
+  
+  $("#blueCircle").css({ "-webkit-transform" : "scale(" + (1 + blueCounter) + ")",
+                         "transform" : "scale(" + (1 + blueCounter) + ")" 
+                        })
+  
+  blueCounter = blueCounter + 0.1;
   
 }

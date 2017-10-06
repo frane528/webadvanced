@@ -110,8 +110,8 @@ h2 {
   transition-property: transform;
 }
 #redSquare:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  /*-webkit-transform: scale(1.1);
+  transform: scale(1.1);*/
 }
 
 #yellowTriangle {
@@ -135,8 +135,8 @@ h2 {
 }
 
 #yellowTriangle:hover {
--webkit-transform: scale(1.1);
-  transform: scale(1.1);
+/*-webkit-transform: scale(1.1);
+  transform: scale(1.1);*/
 }
 
 #blueCircle {
@@ -159,8 +159,8 @@ h2 {
 }
 
 #blueCircle:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+ /* -webkit-transform: scale(1.1);
+  transform: scale(1.1);*/
 }
   #perfect {
     text-align: left;
