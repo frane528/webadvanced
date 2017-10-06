@@ -21,6 +21,8 @@ $(window).resize(function(){
 
 });
 
+var yellowCounter = 0.1;
+
 function triangleAnimation(){
 var triangleTimer = 0;
 let triangleArray = ['    ⚠️', '  ⚠️⚠️⚠️', ' ⚠️⚠️⚠️⚠️⚠️', '⚠️⚠️⚠️⚠️⚠️⚠️⚠️'];
@@ -41,6 +43,12 @@ var counter = 0;
     }, triangleTimer); 
     triangleTimer += 300;
 };
+
+  $("#yellowTriangle").css({ "-webkit-transform" : "scale(" + (1 + yellowCounter) + ")",
+                         "transform" : "scale(" + (1 + yellowCounter) + ")" 
+                        })
+  
+  yellowCounter = yellowCounter + 0.1;
   
 }
 
