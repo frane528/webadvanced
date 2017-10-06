@@ -1,22 +1,22 @@
 $('h1').click(function() {
-    $('#target').show();
+    $('#target').show(300);
 });
 
 $(window).resize(function(){
 
     if($(window).width() < 1499 ) {
-        $('#target, h1, .shape').hide();}
-     else {$('#target, h1, .shape').show();
+        $('#target, h1, .shape').hide(200);}
+     else {$('#target, h1, .shape').show(200);
     }
 
     if($(window).width() < 1000 ) {
-        $('#almost').show();}
-    else {$("#almost").hide();
+        $('#almost').show(200);}
+    else {$("#almost").hide(200);
     }
 
     if($(window).width() < 700 ) {
-        $('#perfect').show();}
-    else {$("#perfect").hide();
+        $('#perfect').show(200);}
+    else {$("#perfect").hide(200);
   }
 
 });
@@ -45,7 +45,7 @@ var counter = 0;
 
 function squareAnimation(){
 var squareTimer = 0;
-let squareArray = ['🔻🔺🔻🔺', '🔺🔻🔺🔻', '🔻🔺🔻🔺'];
+let squareArray = ['🔻🔺🔻🔺🔻🔺🔻', '🔺🔻🔺🔻🔺🔻🔺', '🔻🔺🔻🔺🔻🔺🔻', '🔺🔻🔺🔻🔺🔻🔺'];
 var counter = 0; 
 
   for (s = 0; s <( squareArray.length * 1); s++) {
