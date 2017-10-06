@@ -68,8 +68,8 @@ console.log(randomArray)
         counter = 0;
       }
     
-    }, shapeTimer); 
-    shapeTimer += 300;
+    }, squareTimer); 
+    squareTimer += 300;
 };
 
   $("#redSquare").css({ "-webkit-transform" : "scale(" + (1 + redCounter) + ")",
