@@ -29,12 +29,17 @@ let triangleArray = ['    ⚠️', '  ⚠️⚠️⚠️', ' ⚠️⚠️⚠️�
 let triangleArray2 = ['        ⚠️', '       ⚠️⚠️⚠️', '     ⚠️⚠️⚠️⚠️⚠️', '    ⚠️⚠️⚠️⚠️⚠️⚠️⚠️', '  ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️', '⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️'];
 var counter = 0; 
 
-  for (t = 0; t <( triangleArray.length * 1); t++) {
+let allArrays = [triangleArray, triangleArray2];
+
+var randomArray = Math.floor(Math.random()*2);
+console.log(randomArray)
+
+  for (i = 0; i <( allArrays[randomArray].length * 1); i++) {
     setTimeout(function() {
 
-      console.log(triangleArray[counter]);
+      console.log(allArrays[randomArray][counter]);
    
-      if( counter < triangleArray.length -1 ){ 
+      if( counter < allArrays[randomArray].length -1 ){ 
         counter++;
       } else{
         counter = 0;
@@ -62,7 +67,7 @@ var counter = 0;
 
 let allArrays = [squareArray, squareArray2];
 
-var randomArray = Math.floor(Math.random()*3);
+var randomArray = Math.floor(Math.random()*2);
 console.log(randomArray)
 
   for (i = 0; i <( allArrays[randomArray].length * 1); i++) {
