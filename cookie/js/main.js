@@ -5,9 +5,6 @@ console.log("🍪   🍪   🍪   🍪   🍪   🍪   🍪  🍪   🍪   🍪 
 var allCircles =  [],
     circle     =  '<div class="circle" />';
 
-
-})
-
 if(Cookies.getJSON('circles')){ 
 
     var existingCircles = Cookies.getJSON('circles'); 
