@@ -16,14 +16,33 @@ TweenLite.to("#harp-button", 1, { ease: Power2.easeOut, y: -200 });
 TweenLite.to("#trumpet-button", 1, { ease: Power2.easeOut, y: -200 });
 
 $(document).ready(function(){
+    
+    var banjoClicked = false;
+    
     $("#banjo-button").click(function(){
-        $("#drum-button").animate({top: '120px', left: '-140px', height: '10em'}, 500);
-        $("#bass-button").animate({top: '120px', left: '-140px', height: '10em'}, 500);
-        $("#sax-button").animate({top: '150px', height: '10em'}, 500);
-        $("#harp-button").animate({top: '350px',height: '10em'}, 500);
-        $("#trumpet-button").animate({top: '350px', height: '10em'}, 500);
-        $("#violin-button").animate({height: '10em'}, 500);
-        $("#guitar-button").animate({top: '300px', right: '-50px', height: '10em'}, 500);
+        
+        if(!banjoClicked){
+            $("#drum-button").animate({top: '120px', left: '-140px', height: '10em'}, 500);
+            $("#bass-button").animate({top: '120px', left: '-140px', height: '10em'}, 500);
+            $("#sax-button").animate({top: '150px', height: '10em'}, 500);
+            $("#harp-button").animate({top: '350px',height: '10em'}, 500);
+            $("#trumpet-button").animate({top: '350px', height: '10em'}, 500);
+            $("#violin-button").animate({height: '10em'}, 500);
+            $("#guitar-button").animate({top: '300px', right: '-50px', height: '10em'}, 500);      
+            
+            banjoClicked = true;
+        } else{
+            $("#drum-button").animate({top: '', left: '', height: '100%'}, 500);
+            $("#bass-button").animate({top: '', left: '', height: '100%'}, 500);
+            $("#sax-button").animate({top: '', height: '100%'}, 500);
+            $("#harp-button").animate({top: '-',height: '100%'}, 500);
+            $("#trumpet-button").animate({top: '-', height: '100%'}, 500);
+            $("#violin-button").animate({height: '100%'}, 500);
+            $("#guitar-button").animate({top: '', right: '', height: '100%'}, 500);
+        
+            banjoClicked = false;
+        }
+      
     });
 });
 
