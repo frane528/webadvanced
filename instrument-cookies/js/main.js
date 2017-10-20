@@ -18,17 +18,16 @@ TweenLite.to("#trumpet-button", 1, { ease: Power2.easeOut, y: -200 });
 $(document).ready(function(){
     $("#banjo-button").click(function(){
         $("#drum-button").animate({top: '120px', height: '10em'}, 500);
-        $("#bass-button").animate({top: '50px'});
-        $("#bass-button").animate({top: '250px'});
+        $("#bass-button").animate({top: '100px', left: '20px', height: '10em'}, 500);
         $("#sax-button").animate({top: '80px', height: '10em'}, 500);
         $("#harp-button").animate({left: '-140px', bottom: '-280px', height: '10em'}, 500);
         $("#trumpet-button").animate({left: '-120px', bottom: '-290px', height: '10em'}, 500);
+        $("#violin-button").animate({bottom: '-80px', left: '50px', height: '10em'}, 500);
+        $("#guitar-button").animate({top: '200px'}, 500);
     });
 });
 
-function banjoCookie(){
-    Cookies.set('banjo', 'value', { expires: 7 });
-}
+
 
 function drumCookie(){
     Cookies.set('drum', 'value', { expires: 7 });
