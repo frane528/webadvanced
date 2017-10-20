@@ -1,10 +1,5 @@
-$(document).ready(function() {
-  $("#banjo-button").hover(function () {
-    $(this).animate({ top: "-15" });
-  }, function () {
-    $(this).animate({ top: "0" });
-  });
-});
+CustomWiggle.create("funWiggle", {wiggles: 7, type:"uniform"});
+TweenMax.to("#banjo-button", 2, {rotation:30, ease:"funWiggle"}); 
 
 function banjoCookie(){
     Cookies.set('banjo', 'value', { expires: 7 });
