@@ -1,3 +1,11 @@
+$(document).ready(function() {
+  $("#banjo-button").hover(function () {
+    $(this).animate({ top: "-15" });
+  }, function () {
+    $(this).animate({ top: "0" });
+  });
+});
+
 function banjoCookie(){
     Cookies.set('banjo', 'value', { expires: 7 });
 }
