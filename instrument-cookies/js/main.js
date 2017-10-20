@@ -1,5 +1,20 @@
-CustomWiggle.create("funWiggle", {wiggles: 7, type:"uniform"});
-TweenMax.to("#banjo-button", 2, {rotation:30, ease:"funWiggle"}); 
+//left side instruments
+
+TweenLite.to("#banjo-button", 1, { ease: Power2.easeOut, x: 200 });
+TweenLite.to("#sax-button", 1, { ease: Power2.easeOut, x: 200 });
+
+//right side instruments
+TweenLite.to("#guitar-button", 1, { ease: Power2.easeOut, x: -200 });
+TweenLite.to("#violin-button", 1, { ease: Power2.easeOut, x: -200 });
+
+//top instruments
+TweenLite.to("#drum-button", 1, { ease: Power2.easeOut, y: 200 });
+TweenLite.to("#bass-button", 1, { ease: Power2.easeOut, y: 200 });
+
+//bottom instruments
+TweenLite.to("#harp-button", 1, { ease: Power2.easeOut, y: -200 });
+TweenLite.to("#trumpet-button", 1, { ease: Power2.easeOut, y: -200 });
+
 
 function banjoCookie(){
     Cookies.set('banjo', 'value', { expires: 7 });

@@ -105,17 +105,34 @@ h1 {
     font-weight: 400;
 }
 
+div {
+    float: left;
+}
 
-
-button {
-    background-color: black;
-    border-style: none;
-
+#banjo-button,
+#sax-button {
+    position: relative;
+    left: -200px;
 }
 
 
+#guitar-button,
+#violin-button {
+    position: relative;
+    right: -200px;
+}
 
+#drum-button,
+#bass-button {
+    position: relative;
+    top: -200px;
+}
 
+#harp-button,
+#trumpet-button {
+    position: relative;
+    bottom: -200px;
+}
 
 
 
