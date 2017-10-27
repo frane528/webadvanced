@@ -173,9 +173,12 @@ $(document).ready(function(){
       
     });
     
+        var trumpetAudio = $("#trumpet-clip");
         var trumpetClicked = false;
     
         $("#trumpet-button").click(function(){
+            
+        trumpetAudio.get(0).play();
         
         if(!trumpetClicked){
             $("#trumpet-button").animate({top: '-5em', left: '5em', height: '100%'}, 500);
@@ -208,7 +211,7 @@ $(document).ready(function(){
     
         $("#harp-button").click(function(){
             
-            harpAudio.get(0).play();
+        harpAudio.get(0).play();
         
         if(!harpClicked){
             $("#harp-button").animate({top: '-5em', left: '5em', height: '100%'}, 500);
@@ -236,10 +239,12 @@ $(document).ready(function(){
         }
       
     });
-    
+        var violinAudio = $("#violin-clip");
         var violinClicked = false;
     
         $("#violin-button").click(function(){
+            
+        violinAudio.get(0).play();
         
         if(!violinClicked){
             $("#violin-button").animate({top: '-5em', left: '3em', height: '100%'}, 500);
