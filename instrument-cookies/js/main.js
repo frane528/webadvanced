@@ -79,9 +79,12 @@ $(document).ready(function(){
       
     });
     
+        var bassAudio = $("#bass-clip");
         var bassClicked = false;
     
         $("#bass-button").click(function(){
+            
+        bassAudio.get(0).play();
         
         if(!bassClicked){
             $("#banjo-button").animate({top: '28em', left: '10em', height: '10em'}, 500);
@@ -107,9 +110,12 @@ $(document).ready(function(){
       
     });
     
+        var guitarAudio = $("#guitar-clip");
         var guitarClicked = false;
     
         $("#guitar-button").click(function(){
+            
+        guitarAudio.get(0).play();
         
         if(!guitarClicked){
             $("#banjo-button").animate({top: '28em', left: '10em', height: '10em'}, 500);
