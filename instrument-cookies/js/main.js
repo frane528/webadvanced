@@ -140,10 +140,12 @@ $(document).ready(function(){
         }
       
     });
-    
+        var saxAudio = $("#sax-clip");
         var saxClicked = false;
     
         $("#sax-button").click(function(){
+            
+        saxAudio.get(0).play();
         
         if(!saxClicked){
             $("#sax-button").animate({top: '-3em', left: '3em', height: '100%'}, 500);
@@ -200,9 +202,13 @@ $(document).ready(function(){
         }
       
     });
+        
+        var harpAudio = $("#harp-clip");
         var harpClicked = false;
     
         $("#harp-button").click(function(){
+            
+            harpAudio.get(0).play();
         
         if(!harpClicked){
             $("#harp-button").animate({top: '-5em', left: '5em', height: '100%'}, 500);
