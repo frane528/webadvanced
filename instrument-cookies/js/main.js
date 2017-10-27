@@ -48,9 +48,12 @@ $(document).ready(function(){
       
     });
     
+    var drumAudio = $("#drum-clip");
     var drumClicked = false;
     
     $("#drum-button").click(function(){
+        
+        drumAudio.get(0).play();
         
         if(!drumClicked){
             $("#banjo-button").animate({top: '28em', left: '10em', height: '10em'}, 500);
