@@ -149,6 +149,11 @@ div {
     left: 60em;
     top: 22em;
 }
+
+audio {
+    display: none;
+}
+
 /*#banjo-button,
 #sax-button {
     position: relative;

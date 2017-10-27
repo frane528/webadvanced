@@ -18,8 +18,11 @@
 $(document).ready(function(){
     
     var banjoClicked = false;
+    var banjoAudio = $("#banjo-clip"); 
     
     $("#banjo-button").click(function(){
+        
+        banjoAudio.get(0).play();
         
         if(!banjoClicked){
             $("#drum-button").animate({top: '28em', left: '10em', height: '10em'}, 500);
