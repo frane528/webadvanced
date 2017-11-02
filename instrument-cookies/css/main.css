@@ -105,6 +105,15 @@ h1 {
     font-weight: 400;
 }
 
+.instrument {
+    
+}
+
+.big-instrument {
+    top: 3em;
+    left: 3em;
+}
+
 div {
     position: absolute;
     float: left;
@@ -113,42 +122,27 @@ div {
 
 #drum-button {
     left: 20em;
-    top: 9em;
+    top: 15em;
 }
 
 #bass-button {
     left: 60em;
-    top: 7em;
+    top: 15em;
 
 }
 
 #sax-button {
-    top: 8em;
+    top: 15em;
 }
 
 #trumpet-button {
     left: 40em;
-    top: 8em;
+    top: 15em;
 }
 
 audio {
     display: none;
 }
-
-/*
-
-#drum-button,
-#bass-button {
-    position: relative;
-    top: -200px;
-}
-
-*/
-
-
-
-
-
 
 
 
