@@ -111,31 +111,60 @@ div {
     padding: 5px;
 }
 
+#banjo-button {
+    top: 8em;
+    left:3em;
+}
+
 #drum-button {
     left: 20em;
     top: 9em;
 }
 
 #bass-button {
+    left: 40em;
+    top: 8em;
+}
+
+#guitar-button {
     left: 60em;
     top: 7em;
-
 }
 
 #sax-button {
-    top: 8em;
+    top: 23em;
 }
 
 #trumpet-button {
+    left: 20em;
+    top: 21em;
+}
+
+#harp-button {
     left: 40em;
-    top: 8em;
+    top: 21em;
+}
+
+#violin-button {
+    left: 60em;
+    top: 22em;
 }
 
 audio {
     display: none;
 }
 
-/*
+/*#banjo-button,
+#sax-button {
+    position: relative;
+    left: -200px;
+}
+
+#guitar-button,
+#violin-button {
+    position: relative;
+    right: -200px;
+}
 
 #drum-button,
 #bass-button {
@@ -143,6 +172,11 @@ audio {
     top: -200px;
 }
 
+#harp-button,
+#trumpet-button {
+    position: relative;
+    bottom: -200px;
+}
 */
 
 
