@@ -5,7 +5,7 @@ $(document).ready(function(){
     var statement = "select * from feed where url='http://www.theonion.com/rss'"; // here you link the url you need
     $.queryYQL(statement, "json", undefined, function (data) { //function taken from the query-yql library 
 
-      $("#onion").append("<h1>The New York Time: Art and Design RSS Feed</h1>") //append title of rss feed
+      $("#onion").append("<h1>The Onion RSS Feed</h1>") //append title of rss feed
 
         for (var i = 0; i < data.query.results.item.length; i++) { // for each result:
 

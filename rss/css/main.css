@@ -2,18 +2,38 @@ body{
     background-color: white;
 }
 
+h1 {
+    font-family: sans-serif;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-weight: regular;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
 p{
-    font-family: Times New Roman;
+    font-family: sans-serif;
     padding: 20px;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 16px;
+    line-height: 20px;
     color: black;
 }
 
+#onion {
+    max-width: 70vw;
+    padding: 5vw;
+}
 
+img {
+    max-width: 70vw;
+    padding-left: 4vw;
+}
 
-
-.circle{
-
-
+a {
+    padding: none;
 }
