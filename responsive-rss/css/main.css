@@ -1,0 +1,43 @@
+html {
+    background-color: white;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+}
+
+h2 {
+
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+h3 {
+
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+#onion {
+    max-width: 70vw;
+    padding: 5vw;
+}
+
+img {
+    max-width: 70vw;
+    padding-left: 4vw;
+}
+
+a {
+    color: black;
+}
