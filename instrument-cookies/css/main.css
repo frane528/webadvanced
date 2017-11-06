@@ -106,15 +106,15 @@ h1 {
 }
 
 
-.big-instrument {
-    top: 3em;
-    left: 3em;
-}
-
-div {
+.instrument {
     position: absolute;
     float: left;
     padding: 5px;
+}
+
+.little-instrument {
+    height: 10em;
+    transform: translate(0px, 50px);
 }
 
 #drum-button {
@@ -141,6 +141,10 @@ audio {
     display: none;
 }
 
+.instrument-active {
+    transition: 0.1s;
+    transform: scale(1.1);
+}
 
 
 /* ==========================================================================
