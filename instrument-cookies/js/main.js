@@ -43,18 +43,16 @@ $(document).ready(function(){
         
         - if cookie doesnt exist
             just continue as normal
-*/
     
     //part 2
     
-    var clicked = []
+    //var clicked = []
     
     - //setting the cookie
     - //essentially, on each instrument click you'll need to reset the cookie
     
-    var clicked = [];
     
-    /*if(Cookies.getJSON('instruments')){
+    //if(Cookies.getJSON('instruments')){
         //if this cookie exists
         
        clicked = Cookies.getJSON('instruments'); // set the empty array clicked to equal the saved cookie
@@ -112,4 +110,4 @@ $(document).ready(function(){
                 console.log("added to array", clicked)
                 
             }
-        
+        */
