@@ -109,10 +109,24 @@ h1 {
 .instrument {
     position: absolute;
     float: left;
-    padding: 5px;
+    padding: 5px; 
+}
+
+.instrument:hover{
+    transition: 0.1s;
+    transform: scale(1.1);
 }
 
 .little-instrument {
+    height: 10em;
+    transform: translate(0px, 50px);
+}
+
+.active {
+    height: 100%;
+}
+
+.inactive {
     height: 10em;
     transform: translate(0px, 50px);
 }
@@ -141,10 +155,7 @@ audio {
     display: none;
 }
 
-.instrument-active {
-    transition: 0.1s;
-    transform: scale(1.1);
-}
+
 
 
 /* ==========================================================================
