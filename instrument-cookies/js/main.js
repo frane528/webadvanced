@@ -20,14 +20,15 @@ $(document).ready(function(){
         Cookies.set('instrumentCookie', instrumentArray)
         
    
-   
    */
    
    var instrumentArray = []; //starts empty
    
+   
    var playWholeSong = function(){
-       
        //play song
+       var songAudio = $("#whole-song"); 
+       songAudio.get(0).play();
    }
    
    
@@ -44,8 +45,6 @@ $(document).ready(function(){
    }
    
    console.log(instrumentArray)
-   
-   
    
   
   // click on instrument
@@ -65,7 +64,7 @@ $(document).ready(function(){
           console.log($.inArray(idOfInstrument, instrumentArray))
           
           instrumentArray = instrumentArray.splice($.inArray(idOfInstrument, instrumentArray),1);
-          //alternative is a for loop or an each loop to remove the idOfInstrumetn from array
+          //alternative is a for loop or an each loop to remove the idOfInstrumetn from array******
           
           
           //update cookie
