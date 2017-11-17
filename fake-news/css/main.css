@@ -1,3 +1,6 @@
+body {
+}
+
 .purple-header {
     background-color: #533a71;
     width: 100vw;
@@ -24,6 +27,8 @@ h1 {
     font-size: 2.5em;
     text-align: center;
     line-height: 0.6em;
+    font-family: "europa", sans-serif;
+    font-weight: 800;
 }
 
 h2 {
@@ -31,6 +36,9 @@ h2 {
     font-size: 1em;
     text-align: center;
     line-height: 0.1em;
+    font-family: "europa", sans-serif;
+    font-weight: 600;
+    text-transform: lowercase;
 }
 .game {
     width: 40vw;
@@ -40,23 +48,23 @@ h2 {
     padding: 1em;
 }
 .btn {
-    width: 11vw;
+    font-family: "europa", sans-serif;
+    width: 12vw;
     height: 5vh;
     background-color: #533a71;
     color: white;
     margin: 0.5em;
     text-align: center;
-    padding-top: 0.8em;
+    padding-top: 0.5em;
     float: left;
     position: relative;
     top: 30vh;
-    left: 1.5vw;
 }
 
 .btn:hover {
     border: 0.1em solid #533a71;
     background-color: white;
     color: #533a71;
-    width: 10.9vw;
-    height: 4.9vh;
+    width: 11.8vw;
+    height: 4.8vh;
 }
