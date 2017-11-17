@@ -1,26 +1,29 @@
 .purple-header {
     background-color: #533a71;
     width: 100vw;
-    height: 15vh;
+    height: 12vh;
     padding: 1em;
+    margin-bottom: 4vh;
 }
 .icon {
     color: #ffa630;
-    font-size: 11vh;
+    font-size: 8vh;
     margin: 1vw;
 }
 
 .orange-banner {
-    width: 50vw;
-    height: 22vh;
+    width: 48vw;
+    height: 18vh;
     background-color: #ffa630;
     padding: 1em;
+    margin: auto;
 }
 
 h1 {
     color: white;
     font-size: 2.5em;
     text-align: center;
+    line-height: 0.6em;
 }
 
 h2 {
@@ -28,4 +31,32 @@ h2 {
     font-size: 1em;
     text-align: center;
     line-height: 0.1em;
+}
+.game {
+    width: 40vw;
+    height: 40vh;
+    border: 10px solid #533a71;
+    margin: 4vh auto;
+    padding: 1em;
+}
+.btn {
+    width: 11vw;
+    height: 5vh;
+    background-color: #533a71;
+    color: white;
+    margin: 0.5em;
+    text-align: center;
+    padding-top: 0.8em;
+    float: left;
+    position: relative;
+    top: 30vh;
+    left: 1.5vw;
+}
+
+.btn:hover {
+    border: 0.1em solid #533a71;
+    background-color: white;
+    color: #533a71;
+    width: 10.9vw;
+    height: 4.9vh;
 }
