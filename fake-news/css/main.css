@@ -1,11 +1,12 @@
 body {
+    font-size: 1em;
 }
 
 .purple-header {
     background-color: #533a71;
     width: 100vw;
-    height: 12vh;
-    padding: 1em;
+    height: 4em;
+    padding: 0.8em;
     margin-bottom: 4vh;
 }
 .icon {
@@ -15,18 +16,19 @@ body {
 }
 
 .orange-banner {
-    width: 48vw;
-    height: 18vh;
+    width: 38em;
+    height: 7em;
     background-color: #ffa630;
-    padding: 1em;
     margin: auto;
+    padding-top: 0.2em;
+    padding-bottom: 1em;
 }
 
 h1 {
     color: white;
     font-size: 2.5em;
     text-align: center;
-    line-height: 0.6em;
+    line-height: 1em;
     font-family: "europa", sans-serif;
     font-weight: 800;
 }
@@ -41,35 +43,117 @@ h2 {
     text-transform: lowercase;
 }
 .game {
-    width: 40vw;
-    height: 40vh;
+    width: 31.3em;
+    height: 15em;
     border: 10px solid #533a71;
     margin: 4vh auto;
-    padding: 1em;
+    padding: 1.5em;
+    font-family: "europa", sans-serif;
 }
 
 .buttons {
-    position: relative;
-    top: 7em;
+    position: absolute;
+    top: 32em;
+    margin: 0;
+    padding: 0;
 }
 
 .btn {
     font-family: "europa", sans-serif;
-    width: 12vw;
-    height: 5vh;
+    font-size: .9em;
+    width: 10.6em;
+    height: 2em;
     background-color: #533a71;
     color: white;
-    margin: 0.5em;
     text-align: center;
-    padding-top: 0.5em;
+    padding-top: 0.8em;
     position: relative;
     float: left;
+}
+
+#breitbart-btn {
+    margin-left: 1.4em;
+    margin-right: 1.4em
 }
 
 .btn:hover {
     border: 0.1em solid #533a71;
     background-color: white;
     color: #533a71;
-    width: 11.8vw;
-    height: 4.8vh;
+    width: 10.4em;
+    height: 1.8em;
+}
+p {
+    font-family: "europa", sans-serif;
+}
+a {
+    font-family: "europa", sans-serif;
+    font-size: 0.6em;
+    text-decoration: underline;
+}
+
+
+
+  @media (min-width: 450px) and (max-width: 608px){
+    .orange-banner {
+        width: 28em;
+        height: 4.5em;
+    }
+    .game {
+        width: 22.5em;
+        height: 17em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .btn {
+        width: 8em;
+        margin: 0;
+    }
+    #breitbart-btn {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+    .buttons {
+        top: 31.5em;
+    }
+    .btn:hover {
+        width: 7.8em;
+    }
+
+}
+
+@media (max-width: 449px){
+      .orange-banner {
+          width: 24em;
+          height: 5em;
+      }
+      h1 {
+          font-size: 1.5em;
+      }
+      .game {
+          width: 18em;
+          height: 19em;
+          padding: 1em;
+      }
+      .purple-header {
+          height: 2em;
+      }
+      .icon {
+          font-size: 1.5em;
+      }
+       #breitbart-btn {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+      }
+      .buttons {
+       top: 31.5em;
+      }
+      .btn {
+          width: 8.2em;
+          font-size: 0.7em;
+      }
+      .btn:hover {
+          width: 8em;
+      }
 }
