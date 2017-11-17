@@ -47,6 +47,12 @@ h2 {
     margin: 4vh auto;
     padding: 1em;
 }
+
+.buttons {
+    position: relative;
+    top: 7em;
+}
+
 .btn {
     font-family: "europa", sans-serif;
     width: 12vw;
@@ -56,9 +62,8 @@ h2 {
     margin: 0.5em;
     text-align: center;
     padding-top: 0.5em;
-    float: left;
     position: relative;
-    top: 30vh;
+    float: left;
 }
 
 .btn:hover {
