@@ -2,27 +2,69 @@ body {
     font-size: 1em;
 }
 
+img {
+    display: none;
+}
+
 .purple-header {
     background-color: #533a71;
     width: 100vw;
     height: 4em;
     padding: 0.8em;
     margin-bottom: 4vh;
+    border-bottom: 0.3em solid #9975b9;
 }
+
+.yellow-stars {
+    position: absolute;
+}
+
+.empty-stars {
+    position: absolute;
+}
+
 .icon {
     color: #ffa630;
     font-size: 8vh;
     margin: 1vw;
 }
 
-.orange-banner {
-    width: 38em;
-    height: 7em;
-    background-color: #ffa630;
-    margin: auto;
-    padding-top: 0.2em;
-    padding-bottom: 1em;
+.empty-icon {
+    color: #3c264c;
+    font-size: 8vh;
+    margin: 1vw;
 }
+
+ .orange-banner {
+    width: 43em;
+    height: 7em;
+    position: relative;
+    background: #ffa630;
+    margin: auto;
+  }
+  .orange-banner:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 2em solid white;
+    border-top: 3.5em solid transparent;
+    border-bottom: 3.5em solid transparent;
+  }
+  .orange-banner:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 2em solid white;
+    border-top: 3.5em solid transparent;
+    border-bottom: 3.5em solid transparent;
+  }
+
 
 h1 {
     color: white;
@@ -31,6 +73,7 @@ h1 {
     line-height: 1em;
     font-family: "europa", sans-serif;
     font-weight: 800;
+    padding-top: 0.4em;
 }
 
 h2 {
@@ -44,18 +87,18 @@ h2 {
 }
 .game {
     width: 31.3em;
-    height: 15em;
+    height: 17em;
     border: 10px solid #533a71;
     margin: 4vh auto;
     padding: 1.5em;
     font-family: "europa", sans-serif;
+    display: block;
 }
 
 .buttons {
+    margin: 0 auto;
     position: absolute;
-    top: 32em;
-    margin: 0;
-    padding: 0;
+    top: 33.5em;
 }
 
 .btn {
@@ -90,6 +133,8 @@ a {
     font-family: "europa", sans-serif;
     font-size: 0.6em;
     text-decoration: underline;
+    text-transform: uppercase;
+    color: black;
 }
 
 
@@ -99,9 +144,19 @@ a {
         width: 28em;
         height: 4.5em;
     }
+    .orange-banner:after {
+        border-left: 1em solid white;
+        border-top: 2.25em solid transparent;
+        border-bottom: 2.25em solid transparent;
+    }
+    .orange-banner:before {
+        border-right: 1em solid white;
+        border-top: 2.25em solid transparent;
+        border-bottom: 2.25em solid transparent;
+    }
     .game {
         width: 22.5em;
-        height: 17em;
+        height: 20em;
     }
     h1 {
         font-size: 1.5em;
@@ -115,7 +170,7 @@ a {
         margin-right: 0.5em;
     }
     .buttons {
-        top: 31.5em;
+        top: 34em;
     }
     .btn:hover {
         width: 7.8em;
@@ -128,12 +183,22 @@ a {
           width: 24em;
           height: 5em;
       }
+      .orange-banner:after {
+          border-left: 1em solid white;
+          border-top: 2.5em solid transparent;
+          border-bottom: 2.5em solid transparent;
+      }
+      .orange-banner:before {
+          border-right: 1em solid white;
+          border-top: 2.5em solid transparent;
+          border-bottom: 2.5em solid transparent;
+      }
       h1 {
           font-size: 1.5em;
       }
       .game {
           width: 18em;
-          height: 19em;
+          height: 22em;
           padding: 1em;
       }
       .purple-header {
@@ -142,12 +207,15 @@ a {
       .icon {
           font-size: 1.5em;
       }
+      .empty-icon {
+          font-size: 1.5em;
+      }
        #breitbart-btn {
         margin-left: 0.5em;
         margin-right: 0.5em;
       }
       .buttons {
-       top: 31.5em;
+        top: 34em;
       }
       .btn {
           width: 8.2em;
