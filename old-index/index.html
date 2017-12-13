@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+  		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  		<title>Hello, World</title>
+  		<meta name="description" content="Index page for Web Advanced semester work">
+  		<meta name="viewport" content="width=device-width">
+  		<link rel="stylesheet" href="https://use.typekit.net/ekn6lsl.css">
+  		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+		<script  src="js/script.js"></script>
+<style>
+			
+			
+			body {
+				perspective: 1000px; 
+  				transform-style: preserve-3d;
+			}
+			
+			.rc--random-circle {
+			  position: fixed;
+			  border-radius: 50%;
+			  opacity: 1;
+			  transform-style: preserve-3d;
+			  transform: translateX(0);
+			  transition: all 0.5s;
+			}
+			
+			#main {
+				width: 55vw;
+				height: 30vh;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -20vh;
+				margin-left: -26vw;
+			}
+			
+			.footer {
+  				position: absolute;
+  				right: 0;
+  				bottom: 0;
+				left: 0;
+				padding: 1rem;
+				text-align: center;
+				}
+			
+			h1 {
+				color: #404040;
+				font-weight: 700;
+				font-style: normal;
+				font-size: 30pt;
+				font-family: 'paralucent-condensed', sans-serif;
+				text-align: left;
+			}
+
+			button {
+				border-radius: 50%;
+				text-align: center;
+				border-style: none;
+				padding: 5px 5px;
+				margin: 2%;
+				position: relative;
+			}
+			
+			button:hover {
+				transition: 0.1s;
+    			transform: scale(1.1);	
+			}
+			
+			a {
+				color: white;
+				text-decoration: none;
+				font-weight: 300;
+				font-style: normal;
+				font-family: "paralucent-condensed", sans-serif;
+				letter-spacing: 1px;
+			}
+			
+			.contact {
+				color: #404040;
+				text-decoration: none;
+				padding-bottom: 0.1em;
+				font-weight: 400;
+				font-size: .6em;
+			}
+			
+			.contact.hover {
+				border-bottom: 0.04em solid rgba(0, 0, 0, 0.75);
+			}
+			
+			#pink {
+				width: 9em;
+				height: 9em;
+				background-color: #F5CBD7;
+				font-size: 10pt;
+				left: 20vw;
+			}
+
+			#orange {
+				width: 8em;
+				height: 8em;
+				background-color: #C04428;
+				font-size: 10pt;
+				top: 35vh;
+				left: -10vw;
+			}
+
+			#green {
+				width: 10em;
+				height: 10em;
+				background-color: #C1D4C8;
+				font-size: 10pt;
+				left: 30vw;
+			}
+
+			#purple {
+				width: 8em;
+				height: 8em;
+				background-color: #D1B4D6;
+				font-size: 10pt;
+				top: 60vh;
+			}
+
+			#blue {
+				width: 10em;
+				height: 10em;
+				background-color: #2092D0;
+				font-size: 10pt;
+				top: 55vh;
+				left: 10vw;
+			}
+			
+
+			@media screen and (max-width: 800px) {
+
+			}
+		</style>
+	</head>
+	<body>
+		<div class="rc--circles-wrap"></div>
+		<div id="main"><h1>Hi, I’m Emily. This is an index of my assignments for Web Advanced class at Parsons School of Design, Fall Semester 2017.</h1>
+		</div>
+		<button id="pink"><a href="foucault/01-homepage/foucault_home.html">Project 1: Hello World</a></button>
+		<button id="orange"><a href="console-new/index.html">Project 2: Hidden Pattern</a></button>
+		<button id="green"><a href="instrument-cookies/index.html">Project 3:<br>Loop</a></button>
+		<button id="purple"><a href="responsive-rss/index.html">Project 4: Responsive RSS</a></button>
+		<button id="blue"><a href="fake-news/index.html">Project 5: APIs</a></button>
+		<div class="footer"><a class="contact" href="mailto:emilyafrank11@gmail.com" target="_blank">CONTACT</a></div>
+		
+
+    
+	</body>
+</html>

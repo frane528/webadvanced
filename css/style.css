@@ -1,0 +1,45 @@
+body {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+.rc--random-circle {
+  position: fixed;
+  border-radius: 50%;
+  opacity: 1;
+  transform-style: preserve-3d;
+  transform: translateX(0);
+}
+h1 {
+  color: #404040;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30pt;
+  font-family: 'paralucent-condensed', sans-serif;
+  text-align: left;
+}
+#main {
+  width: 55vw;
+  height: 30vh;
+  position: relative;
+  left: 30%;
+  top: 10em;
+}
+button {
+  background-color: #B22222;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+button:hover {
+  transition: 0.1s;
+  transform: scale(1.1);	
+	}
+	
+	a {
+				color: white;
+				text-decoration: none;
+				font-weight: 300;
+				font-style: normal;
+				font-family: "paralucent-condensed", sans-serif;
+				letter-spacing: 1px;
+			}

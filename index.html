@@ -1,173 +1,69 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-  		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  		<title>Hello, World</title>
-  		<meta name="description" content="Index page for Web Advanced semester work">
-  		<meta name="viewport" content="width=device-width">
-  		<link rel="stylesheet" href="https://use.typekit.net/ekn6lsl.css">
-<style>
-			
-			body, html {
-				background-color: white;
-				font-family: "paralucent-condensed", sans-serif;
-				padding: 1vh 1vw;
-			}
-			
-			#main {
-				width: 55vw;
-				height: 30vh;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				margin-top: -15vh;
-				margin-left: -27vw;
-			}
-			
-			.footer {
-  				position: absolute;
-  				right: 0;
-  				bottom: 0;
-				left: 0;
-				padding: 1rem;
-				text-align: center;
-				font-size: .6em;
-				}
-			
-			h1 {
-				color: #404040;
-				font-weight: 700;
-				font-style: normal;
-				font-size: 30pt;
-				font-family: 'paralucent-condensed', sans-serif;
-				text-align: left;
-			}
-			h3 {
-				color: #404040;
-				
-			}
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Emily Frank: Web Advanced</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Index page for Web Advanced semester work">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://use.typekit.net/ekn6lsl.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
-			button {
-				border-radius: 50%;
-				text-align: center;
-				border-style: none;
-				padding: 5px 5px;
-				margin: 2%;
-				position: relative;
-			}
-			
-			button:hover {
-				transition: 0.1s;
-    			transform: scale(1.1);	
-			}
-			
-			a {
-				color: white;
-				text-decoration: none;
-				font-weight: 700;
-				font-style: normal;
-				font-family: "paralucent-condensed", sans-serif;
-				letter-spacing: 1px;
-			}
-			
-			.contact {
-				color: #404040;
-				text-decoration: none;
-				padding-bottom: 0.1em;
-			}
-			
-			.contact.hover {
-				border-bottom: 0.04em solid rgba(0, 0, 0, 0.75);
-			}
-			
-			#pink {
-				width: 120px;
-				height: 120px;
-				background-color: #F5CBD7;
-				font-size: 10pt;
-			}
+  
+      <style>
 
-			#orange {
-				width: 110px;
-				height: 110px;
-				background-color: #C04428;
-				font-size: 10pt;
-			}
+      body {
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      }
+      .rc--random-circle {
+        position: fixed;
+        border-radius: 50%;
+        opacity: 1;
+        transform-style: preserve-3d;
+        transform: translateX(0);
+      }
+      h1 {
+        color: #404040;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 30pt;
+        font-family: 'paralucent-condensed', sans-serif;
+        text-align: left;
+      }
+      #main {
+        width: 55vw;
+        height: 30vh;
+        position: relative;
+        left: 23vw;
+        top: 30vh;
+      }
 
-			#green {
-				width: 100px;
-				height: 100px;
-				background-color: #C1D4C8;
-				font-size: 9pt;
-			}
+    </style>
 
-			#purple {
-				width: 90px;
-				height: 90px;
-				background-color: #D1B4D6;
-				font-size: 8pt;
-			}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-			#blue {
-				width: 80px;
-				height: 80px;
-				background-color: #2092D0;
-				font-size: 7pt;
-			}
+</head>
 
+<body>
+  <div id="main">
+    <h1>Hi, I’m Emily. This is an index of my assignments for Web Advanced class at Parsons School of Design, Fall Semester 2017.</h1>
+	</div>
+	
+  	<button id="project-1"><a href="foucault/01-homepage/foucault_home.html">Project 1: Hello World</a></button>
+  	<button id="project-2"><a href="console-new/index.html">Project 2: Hidden Pattern</a></button>
+  	<button id="project-3"><a href="instrument-cookies/index.html">Project 3:<br>Loop</a></button>
+  	<button id="project-4"><a href="responsive-rss/index.html">Project 4: Responsive RSS</a></button>
+  	<button id="project-5"><a href="fake-news/index.html">Project 5: APIs</a></button>
 
-			@media screen and (max-width: 800px) {
-			
-			#main {
-				float: clear;
-				top: 65%;
-			}
-			
-			#pink {
-				top: -25%;
-				left: -7%;
-				width: 100px;
-				height: 100px;
-				font-size: 12px;
-			}
-			
-			#orange {
-				top: -15%;
-				left: 10%;
-				width: 90px;
-				height: 90px;
-				font-size: 10px;
-			}
-			#green {
-				top: 40%;
-				left: -15%;
-				width: 90px;
-				height: 90px;
-				font-size: 10px;
-			}
-			#purple {
-				width: 80px;
-				height: 80px;
-				font-size: 9px;
-				top: 35%;
-				left: 20%;
-			}
-			#blue {
-				top: 30%;
-				left: 10%;
-			}
-			}
-		</style>
-	</head>
-	<body>
-		<div id="main"><h1>Hi, I’m Emily. This is an index of my assignments for Web Advanced class at Parsons School of Design.</h1>
-		<h3>Fall Semester, 2017</h3></div>
-		<button id="pink"><a href="foucault/01-homepage/foucault_home.html">Project 1: Hello World</a></button>
-		<button id="orange"><a href="console-new/index.html">Project 2: Hidden Pattern</a></button>
-		<button id="green"><a href="instrument-cookies/index.html">Project 3: Loop</a></button>
-		<button id="purple"><a href="responsive-rss/index.html">Project 4: Responsive RSS</a></button>
-		<button id="blue"><a href="fake-news/index.html">Project 5: APIs</a></button>
-		<div class="footer"><a class="contact" href="mailto:emilyafrank11@gmail.com" target="_blank">CONTACT</a></div>
-	</body>
+<div class="rc--circles-wrap"></div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
 </html>
