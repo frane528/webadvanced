@@ -1,6 +1,5 @@
 body {
   perspective: 1000px;
-  transform-style: preserve-3d;
 }
 .rc--random-circle {
   position: fixed;
@@ -8,6 +7,7 @@ body {
   opacity: 1;
   transform-style: preserve-3d;
   transform: translateX(0);
+  z-index: -1;
 }
 h1 {
   color: #404040;
@@ -23,21 +23,27 @@ h1 {
   position: relative;
   left: 30%;
   top: 10em;
+  z-index: 1;
 }
-button {
+.button {
+
+}
+
+#project-1 {
   background-color: #B22222;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 10em;
+  height: 10em;
   font-size: 10pt;
 }
-button:hover {
+
+.button:hover {
   transition: 0.1s;
   transform: scale(1.1);	
 	}
-	
+
 a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: 300;
   font-style: normal;
