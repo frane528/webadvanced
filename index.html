@@ -10,7 +10,9 @@
 <style>
 			
 			body, html {
-				background-color: #EFE7E2;
+				background-color: white;
+				font-family: "paralucent-condensed", sans-serif;
+				padding: 1vh 1vw;
 			}
 			
 			#main {
@@ -23,6 +25,16 @@
 				margin-left: -27vw;
 			}
 			
+			.footer {
+  				position: absolute;
+  				right: 0;
+  				bottom: 0;
+				left: 0;
+				padding: 1rem;
+				text-align: center;
+				font-size: .6em;
+				}
+			
 			h1 {
 				color: #404040;
 				font-weight: 700;
@@ -31,30 +43,49 @@
 				font-family: 'paralucent-condensed', sans-serif;
 				text-align: left;
 			}
+			h3 {
+				color: #404040;
+				
+			}
 
 			button {
 				border-radius: 50%;
 				text-align: center;
 				border-style: none;
 				padding: 5px 5px;
-				margin: 3%;
+				margin: 2%;
 				position: relative;
-				
 			}
+			
+			button:hover {
+				transition: 0.1s;
+    			transform: scale(1.1);	
+			}
+			
 			a {
 				color: white;
 				text-decoration: none;
 				font-weight: 700;
 				font-style: normal;
-				font-family: 'paralucent-condensed', sans-serif;
+				font-family: "paralucent-condensed", sans-serif;
 				letter-spacing: 1px;
 			}
+			
+			.contact {
+				color: #404040;
+				text-decoration: none;
+				padding-bottom: 0.1em;
+			}
+			
+			.contact.hover {
+				border-bottom: 0.04em solid rgba(0, 0, 0, 0.75);
+			}
+			
 			#pink {
 				width: 120px;
 				height: 120px;
 				background-color: #F5CBD7;
 				font-size: 10pt;
-				left: 20%;
 			}
 
 			#orange {
@@ -62,8 +93,6 @@
 				height: 110px;
 				background-color: #C04428;
 				font-size: 10pt;
-				top: 30%;
-				left: -25%;
 			}
 
 			#green {
@@ -71,8 +100,6 @@
 				height: 100px;
 				background-color: #C1D4C8;
 				font-size: 9pt;
-				top: 70%;
-				left:-15%;
 			}
 
 			#purple {
@@ -80,8 +107,6 @@
 				height: 90px;
 				background-color: #D1B4D6;
 				font-size: 8pt;
-				top: 50%;
-				left: 15%;
 			}
 
 			#blue {
@@ -89,35 +114,10 @@
 				height: 80px;
 				background-color: #2092D0;
 				font-size: 7pt;
-				top: 8%;
-				left: -2%;
 			}
 
-			#container {
-				text-align: center;
-				width: 80%;
-				height: 75%;
-				top: 45%;
-				left: 48%;
-				margin-top: -20%;
-				margin-left:-40%;
-				position: absolute;
-				padding: 2%;
-			}
+
 			@media screen and (max-width: 800px) {
-		
-			#container {
-				float: clear;
-				text-align: center;
-				width: 80%;
-				height: 50%;
-				top: 30%;
-				left: 48%;
-				margin-top: -20%;
-				margin-left:-40%;
-				position: absolute;
-				padding: 2%;
-			}
 			
 			#main {
 				float: clear;
@@ -161,13 +161,13 @@
 		</style>
 	</head>
 	<body>
-		<div id="container">
-		<div id="main"><h1>Hi, I’m Emily. This is an index of my assignments for Web Advanced class at Parsons School of Design.</h1></div>
-		<button id="pink"><a href="foucault/01-homepage/foucault_home.html">Project 1</a></button>
-		<button id="orange"><a href="console-new/index.html">Project 2</a></button>
-		<button id="green"><a href="instrument-cookies/index.html">Project 3</a></button>
-		<button id="purple"><a href="responsive-rss/index.html">Project 4</a></button>
-		<button id="blue"><a href="fake-news/index.html">Project 5</a></button>
-		</div>
+		<div id="main"><h1>Hi, I’m Emily. This is an index of my assignments for Web Advanced class at Parsons School of Design.</h1>
+		<h3>Fall Semester, 2017</h3></div>
+		<button id="pink"><a href="foucault/01-homepage/foucault_home.html">Project 1: Hello World</a></button>
+		<button id="orange"><a href="console-new/index.html">Project 2: Hidden Pattern</a></button>
+		<button id="green"><a href="instrument-cookies/index.html">Project 3: Loop</a></button>
+		<button id="purple"><a href="responsive-rss/index.html">Project 4: Responsive RSS</a></button>
+		<button id="blue"><a href="fake-news/index.html">Project 5: APIs</a></button>
+		<div class="footer"><a class="contact" href="mailto:emilyafrank11@gmail.com" target="_blank">CONTACT</a></div>
 	</body>
 </html>
