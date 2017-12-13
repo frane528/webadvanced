@@ -29,17 +29,18 @@ button {
   border-radius: 50%;
   width: 100px;
   height: 100px;
+  font-size: 10pt;
 }
 button:hover {
   transition: 0.1s;
   transform: scale(1.1);	
 	}
 	
-	a {
-				color: white;
-				text-decoration: none;
-				font-weight: 300;
-				font-style: normal;
-				font-family: "paralucent-condensed", sans-serif;
-				letter-spacing: 1px;
-			}
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  font-style: normal;
+  font-family: "paralucent-condensed", sans-serif;
+  letter-spacing: 1px;
+	}
