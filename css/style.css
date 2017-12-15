@@ -30,12 +30,12 @@ h1 {
 .button {
   position: absolute;
   background-color: #B22222;
-  width: 6em;
-  height: 6em;
   border-radius: 50%;
   text-align: center;
   border-style: none;
   opacity: 0.9;
+  padding: 1em 1em;
+  margin: 1%;
 }
 
 #project-1 {
@@ -45,18 +45,26 @@ h1 {
 #project-2 {
   top: 50vh;
   left: 4vw;
+  padding-top: 1.7em;
+  padding-bottom: 1.7em;
 }
 #project-3 {
   top: 70vh;
   left: 35vw;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
 }
 #project-4 {
   top: 3vh;
   left: 60vw;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
 }
 #project-5 {
   top: 50vh;
   left: 80vw;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
 }
 .button:hover {
   transition: 0.1s;
@@ -68,11 +76,15 @@ a {
   text-decoration: none;
   font-family: sans-serif;
   line-height: 22px;
+  font-size: 10pt;
+  margin: 1%;
+  top: 1em;
 	}
 	#emily {
 	  text-decoration: none;
 	  color:#404040;
 	  border-bottom: 0.04 em solid; 
+	  font-size: 30pt;
 	}
 	#emily.hover {
 	  color: #B22222;
