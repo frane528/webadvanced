@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://use.typekit.net/zfs4zse.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+        
     </head>
     <body>
         <div class="purple-header">
@@ -24,12 +25,13 @@
                 <span class="empty-icon">★</span>
             </div>
             <div class="yellow-stars">
-                <span class="icon">★</span>
-                <span class="icon">★</span>
-                <span class="icon">★</span>
-                <span class="icon">★</span>
-                <span class="icon">★</span>
+                <span class="icon" id="icon-1">★</span>
+                <span class="icon" id="icon-2">★</span>
+                <span class="icon" id="icon-3">★</span>
+                <span class="icon" id="icon-4">★</span>
+                <span class="icon" id="icon-5">★</span>
             </div>
+            <h2 id="counter">Attempts: 0</h2>
         </div>
         
         <div class="orange-banner">
@@ -45,9 +47,9 @@
             <div id="yikes"></div>
             <div id="hmm"></div>
             <div class="buttons">
-                <div class="btn" id="nyt-btn">New York Times</div>
-                <div class="btn" id="breitbart-btn">Breitbart</div>
-                <div class="btn" id="onion-btn">The Onion</div>
+                <div class="btn" id="nyt-btn" onclick="counterFunction()">New York Times</div>
+                <div class="btn" id="breitbart-btn" onclick="counterFunction()">Breitbart</div>
+                <div class="btn" id="onion-btn" onclick="counterFunction()">The Onion</div>
             </div>
         </div>
         
@@ -59,6 +61,19 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         
+        <script>
+        //counter function
+    
+        var add = (function () {
+        var counter = 0;
+        return function () {return counter += 1;}
+        })();
+    
+        function counterFunction(){
+            console.log(counter)
+        document.getElementById("counter").innerHTML = "Attempts: " + add();
+        }
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

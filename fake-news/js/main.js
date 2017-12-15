@@ -1,5 +1,17 @@
 $(document).ready(function(){
     
+        
+    
+    //hide stars on load:
+  
+  $(".icon").hide()
+  
+    $("#onion-btn").click(function(){
+        $("#icon-1").show();
+    });
+
+
+    
 	console.log("RSS - Responsive");
 
     var onionFeed = [],
@@ -56,7 +68,7 @@ $(document).ready(function(){
         
         console.log("breitbart", json.articles)
         
-        $("#breitbart").append( "<h3>" + json.articles + "</h3>");
+        //$("#breitbart").append( "<h3>" + json.articles + "</h3>");
         
         //push breitbart articles to breitbartFeed array
         
@@ -90,7 +102,7 @@ $(document).ready(function(){
           method: 'GET',
         }).done(function(result) {
           
-          $("#nyt").append("<h3>" + result + "</h3>");
+          //$("#nyt").append("<h3>" + result + "</h3>");
           
           console.log("result here: ", result.results);
           

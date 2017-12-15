@@ -6,6 +6,13 @@ img {
     display: none;
 }
 
+#counter {
+    color: #ffa630;
+    text-align: right;
+    margin-right: 3vw;
+    margin-top: 1em;
+}
+
 .purple-header {
     background-color: #533a71;
     width: 100vw;
@@ -87,10 +94,10 @@ h2 {
 }
 .game {
     width: 31.3em;
-    height: 17em;
+    height: 19em;
     border: 10px solid #533a71;
     margin: 4vh auto;
-    padding: 1.5em;
+    padding: 1em;
     font-family: 'Roboto Condensed', sans-serif;
     display: block;
 }
@@ -98,7 +105,7 @@ h2 {
 .buttons {
     margin: 0 auto;
     position: absolute;
-    top: 33.5em;
+    top: 34em;
 }
 
 .btn {
@@ -165,7 +172,7 @@ a {
     }
     .game {
         width: 22.5em;
-        height: 20em;
+        height: 23em;
     }
     h1 {
         font-size: 1.5em;
@@ -179,7 +186,7 @@ a {
         margin-right: 0.5em;
     }
     .buttons {
-        top: 34em;
+        top: 35.5em;
     }
     .btn:hover {
         width: 7.8em;
@@ -207,7 +214,7 @@ a {
       }
       .game {
           width: 18em;
-          height: 22em;
+          height: 23em;
           padding: 1em;
       }
       .purple-header {
@@ -215,6 +222,7 @@ a {
       }
       .icon {
           font-size: 1.5em;
+          display: hidden;
       }
       .empty-icon {
           font-size: 1.5em;
@@ -224,7 +232,7 @@ a {
         margin-right: 0.5em;
       }
       .buttons {
-        top: 34em;
+        top: 35em;
       }
       .btn {
           width: 8.2em;
