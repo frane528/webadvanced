@@ -1,5 +1,6 @@
 body {
   perspective: 1000px;
+  transform-style: preserve-3d
 }
 .rc--random-circle {
   position: fixed;
@@ -21,12 +22,20 @@ h1 {
   width: 55vw;
   height: 30vh;
   position: relative;
-  left: 30%;
-  top: 10em;
+  left: 23vw;
+  top: 30vh;
   z-index: 1;
 }
 .button {
-
+  position: absolute;
+  background-color: #B22222;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  text-align: center;
+  border-style: none;
+  margin: 3%;
+  opacity: 0.9;
 }
 
 #project-1 {
