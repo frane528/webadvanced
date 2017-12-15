@@ -41,25 +41,26 @@ h1 {
 #project-1 {
   top: 8vh;
   left: 25vw;
-  padding: 1em 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 #project-2 {
   top: 50vh;
   left: 4vw;
-  padding-top: 1.7em;
-  padding-bottom: 1.7em;
+  padding-top: 2.2em;
+  padding-bottom: 2.2em;
 }
 #project-3 {
   top: 70vh;
   left: 35vw;
-  padding-left: 1.3em;
-  padding-right: 1.3em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 #project-4 {
   top: 35vh;
   left: 80vw;
-  padding-left: 1.3em;
-  padding-right: 1.3em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 .button:hover {
