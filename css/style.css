@@ -40,7 +40,8 @@ h1 {
 
 #project-1 {
   top: 8vh;
-  left: 20vw;
+  left: 25vw;
+  padding: 1em 1em;
 }
 #project-2 {
   top: 50vh;
@@ -55,17 +56,12 @@ h1 {
   padding-right: 1.3em;
 }
 #project-4 {
-  top: 3vh;
-  left: 60vw;
-  padding-left: 1.3em;
-  padding-right: 1.3em;
-}
-#project-5 {
-  top: 50vh;
+  top: 35vh;
   left: 80vw;
   padding-left: 1.3em;
   padding-right: 1.3em;
 }
+
 .button:hover {
   transition: 0.1s;
   transform: scale(1.1);	
