@@ -10,12 +10,13 @@ body {
   transform: translateX(0);
   z-index: -1;
 }
+
 h1 {
   color: #404040;
   font-weight: 700;
   font-style: normal;
   font-size: 30pt;
-  font-family: 'paralucent-condensed', sans-serif;
+  font-family: "paralucent-condensed", sans-serif;
   text-align: left;
 }
 #main {
@@ -29,33 +30,50 @@ h1 {
 .button {
   position: absolute;
   background-color: #B22222;
-  width: 4em;
-  height: 4em;
+  width: 6em;
+  height: 6em;
   border-radius: 50%;
   text-align: center;
   border-style: none;
-  margin: 3%;
   opacity: 0.9;
 }
 
 #project-1 {
-  background-color: #B22222;
-  border-radius: 50%;
-  width: 10em;
-  height: 10em;
-  font-size: 10pt;
+  top: 8vh;
+  left: 20vw;
 }
-
+#project-2 {
+  top: 50vh;
+  left: 4vw;
+}
+#project-3 {
+  top: 70vh;
+  left: 35vw;
+}
+#project-4 {
+  top: 3vh;
+  left: 60vw;
+}
+#project-5 {
+  top: 50vh;
+  left: 80vw;
+}
 .button:hover {
   transition: 0.1s;
   transform: scale(1.1);	
 	}
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
-  font-weight: 300;
-  font-style: normal;
-  font-family: "paralucent-condensed", sans-serif;
-  letter-spacing: 1px;
+  font-family: sans-serif;
+  line-height: 22px;
+	}
+	#emily {
+	  text-decoration: none;
+	  color:#404040;
+	  border-bottom: 0.04 em solid; 
+	}
+	#emily.hover {
+	  color: #B22222;
 	}
